@@ -1,0 +1,247 @@
+/*RESETEO */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    float: left;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 50px;
+    background: #142938;
+    /*Nuevas propiedades */
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,.5);
+    border-bottom: 1px solid #447dd5;
+	z-index: 999;
+}
+
+nav>button{
+    float: left;
+    width: 20%;
+    height: 60px;
+    background: #336A93;
+    border: none;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+nav>button#icono {
+	background-image:url(../imagen/lugar.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: 80% 80%;
+}
+
+nav>button#back {
+	background-image:url(../imagen/back.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: 80% 80%;
+}
+
+#tope {
+	width: 100%;
+	height: 11.1%;
+}
+
+h2 {
+	float: left;
+	width: 60%;
+	height: 50px;
+	text-align: center;
+	padding-top: 10px;
+	color: white;
+}
+#img {
+	width: 100%;
+}
+
+#ubicame {
+	float: left;
+    width: 60%;
+    margin-left: 20%;
+    height: 5%;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    background: #275170;
+    color: #FFF;
+	border: 1px solid grey;
+}
+
+#box {
+	float: left;
+	width: 100%;
+	margin-top: 3%;
+}
+
+input{
+    float: left;
+    width:  90%;
+    margin-left: 5%;
+    height: 35px;
+    font-size: 17px;
+    border: 1px solid #47284b;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+#form {
+  width: 100%;
+  height: 100px;
+}
+
+#form p {
+  text-align: center;
+}
+
+#form label {
+  font-size: 30px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  color: grey;
+  font-size: 30px;
+}
+
+.clasificacion {
+  width: 40%;
+  direction: rtl;
+  margin-left: 30%;
+  unicode-bidi: bidi-override;
+}
+
+label:hover,
+label:hover ~ label {
+  color: orange;
+	font-size: 30px;
+}
+
+input[type="radio"]:checked ~ label {
+  color: orange;
+}
+
+select {
+	width: 90%;
+	height: 35px;
+	margin-left: 5%;
+	margin-top: 2%;	
+	border-radius: 5px;
+	font-size: 20px;
+}
+
+#box>button {
+	float: left;
+    width: 60%;
+    margin-left: 20%;
+    height: 8%;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    background: #275170;
+    color: #FFF;
+	border: 1px solid grey;
+}
+
+body{
+    background: url(../imagen/fondo.jpg) repeat center fixed;
+    background-size: 100% 100%;
+}
+
+nav{
+    float: left;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 60px;
+    background: #5e8fdb;
+    /*sombras offsetid, offseta/b, desenfoque, grosor, color*/
+    box-shadow: 0px, 2px, 10px, 0px rgba(0,0,0,.5);
+    border-bottom: 1px solid #447dd5;
+}
+
+.notas{
+    float: left;
+    width: 100%;
+    margin-top: 60px;
+
+}
+
+.nueva-nota>input:focus, textarea:focus{
+    outline: none;
+}
+
+.nota{
+    width: 90%;
+    float: left;
+    margin-left: 5%;
+    margin-top: 20px;
+    background: #408080;
+}
+
+.nota>h1{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+    float: left;
+    width: 80%;
+	text-align: center;
+    color: white;
+}
+
+.nota>h4{
+	float: left;
+    font-size: 18px;
+    font-weight: bold;
+    width: 80%;
+	font-weight: 500;
+	color: orange;
+	padding: 5px;
+}
+
+.nota>h3{
+    font-size: 18px;
+    font-weight: bold;
+    float: left;
+    width: 80%;
+	padding: 5px;
+}
+.nota>p{
+    font-size: 18px;
+    padding: 5px;
+    float: left;
+    width: 100%;
+	color: darkgreen;
+}
+
+.nota>button{
+    float: right;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: rgba(0,0,0,.1);
+    margin-bottom: -15px;
+}
+
+h5 {
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 30%;
+	font-size: 30px;
+	color: white;
+}

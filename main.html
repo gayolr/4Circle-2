@@ -1,0 +1,79 @@
+<html>
+    
+    <! -- Tod lo que se ve, pero que hace que funcione-->
+    <head>
+        <title>HTML</title>
+        <meta charset = "utf-8"> <! -- es para poder poner acentos,etc -->
+        <meta name="viewport" content = "width=device-width">
+        <link href="css/estilo_main.css"rel="stylesheet" type="text">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,500italic' rel='stylesheet' type='text/css'>
+        <script src="js/funciones.js"></script>
+    </head>
+    
+    <body>
+        
+        <nav>
+            <button id="icono" onclick="lugarespage()"></button>
+			<h2>4Circle</h2>
+			<button onclick="creditospage()">?</button>
+        </nav>
+		
+		<div id="tope"></div>
+		<div>
+			
+			<div class = "Lugar">
+        
+             <div class = "nueva-nota">
+				
+				<!-- Se determina y escribe la localizacion -->
+                 <div id='ubicacion'></div>	
+
+                 <!-- Se escribe un mapa con la localizacion anterior-->
+                  <div id="mapa"></div>
+                  <div id="mapholder"></div>
+				 
+                  <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+				 
+                 <button id="ubicame" onclick="cargarmap()">Ubicame</button>
+		
+		<div id="box">
+			<input type="text" placeholder="Nombre del Lugar" id="lugar" required="required">
+            <select id="precios" name="precios">  
+                <option value="Precio: $">$</option>
+				<option value="Precio: $$">$$</option>
+                <option value="Precio: $$$">$$$</option>  
+                <option value="Precio: $$$$">$$$$</option>
+            </select>
+            <form>
+               <p id="estrellas" class="clasificacion">
+               <input id="radio1" type="radio" name="estrellas" value="Calificación: ★★★★★" onClick="valorStar(this)"><!--
+            --><label for="radio1">★</label><!--
+            --><input id="radio2" type="radio" name="estrellas" value="Calificación: ★★★★" onClick="valorStar(this)"><!--
+            --><label for="radio2">★</label><!--
+            --><input id="radio3" type="radio" name="estrellas" value="Calificación: ★★★" onClick="valorStar(this)"><!--
+            --><label for="radio3">★</label><!--
+            --><input id="radio4" type="radio" name="estrellas" value="Calificación: ★★" onClick="valorStar(this)"><!--
+            --><label for="radio4">★</label><!--
+            --><input id="radio5" type="radio" name="estrellas" value="Calificación: ★" onClick="valorStar(this)"><!--
+            --><label for="radio5">★</label>
+  </p>
+</form>
+            <select id="categoria" name="categoria" placeholder="Paquete 5">  
+                <option value="Categoría: Bar">BAR</option>
+                <option value="Categoría: Restaurante">RESTAURANTE</option>  
+                <option value="Categoría: Hotel">HOTEL</option>
+		        <option value="Categoría: Antro">ANTRO</option>
+		        <option value="Categoría: Café">CAFÉ</option>
+				<option value="Categoría: Museo">MUSEO</option>
+            </select> 
+			
+			<button onClick="almacenarLugar()">Guardar</button>
+		</div>
+			</div>
+		
+		</div>
+    
+    </body>
+        
+    
+</html>
